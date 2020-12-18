@@ -1,0 +1,13 @@
+<%- include('./partials/header')%>
+<%- include('./partials/navigation')%>
+<h1>This is the gallery page</h1>
+<section>
+    <% data.forEach(element => { %>
+        <img src="<%= element.download_url %>" alt="">
+    <% }) %>
+</section>
+<%# console.log(galleryData) %>
+<%- include('./partials/footer') %>
+
+
+
