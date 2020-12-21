@@ -1,6 +1,20 @@
 <%- include('./partials/header')%>
 <%- include('./partials/navigation')%>
 <h1>Team</h1>
-
+<div class="news">
+<% news.forEach(article => { %>
+<article>
+    <h2><%= article.title %></h2>
+    <img src=<%= article.urlToImage %> alt="">
+    <p>
+        <%= article.description %>
+    </p>
+    <footer>
+        <h4><%= article.author%> </h4>
+        <a href=<%=article.url %>>Click me</a>
+    </footer>
+</article>
+<% }) %>
+</div>
 
 <%- include('./partials/footer') %>

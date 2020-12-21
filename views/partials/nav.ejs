@@ -1,14 +1,13 @@
+<!-- navigation dinámica -->
 <nav>
     <ul>
-        <% naviData.forEach(li => { %>
-            <li>
-                <a href="<%= li.url %>"><%= li.name %>
-                </a>
-            </li>
-        <% }) %>
+        <% nav.forEach(menuItem=> { %>
+            <li><a href=<%=menuItem.url %> > <%=menuItem.name %> </a></li>
+            <%})%>
     </ul>
 </nav>
 
+<!-- navigation estática: -->
 <!--    <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>

@@ -18,3 +18,25 @@ a {
     color: #fff;
     text-decoration: none;
 }
+.my-gallery, .news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1 rem;
+
+}
+.my-gallery img, .news img{
+    object-fit: cover;
+    height: 30vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.my-gallery figcaption {
+    text-align: right;
+}
+
+.news footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
