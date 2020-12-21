@@ -18,17 +18,28 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+/*
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: #333333;
+    color: #ffffff;
+}
+a {
+    color: inherit;
+}
+*/
 .my-gallery, .news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1 rem;
+    gap: 1rem;
 
 }
 .my-gallery img, .news img{
     object-fit: cover;
     height: 30vh;
     width: 100%;
-    /* overflow: hidden; */
 }
 
 .my-gallery figcaption {
